@@ -1,0 +1,635 @@
+{
+  "id": "78f1cc0a-9069-4235-b0a3-4c725df9dc38",
+  "version": "2.0",
+  "name": "Test site",
+  "url": "https://www.lookfantastic.ru",
+  "tests": [{
+    "id": "7f3a00f8-a280-49ad-8cff-590836df54ee",
+    "name": "Registration form",
+    "commands": [{
+      "id": "e28de5fc-2dc1-40e1-ab54-f0865ff9cdb6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2bdae38-0c4f-4a08-8612-bcc101d28747",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "202896f6-4765-4a9f-a5d1-08e7050bf553",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.responsiveFlyoutBasket_basketButton",
+      "targets": [
+        ["css=.responsiveFlyoutBasket_basketButton", "css:finder"],
+        ["xpath=//header[@id='nav']/div[2]/div[2]/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/my.basket')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3d9eca9-c553-4a38-b88b-987100ce3454",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "d0433cbe-82da-4e5e-a287-937e9a6bc854",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@class='responsiveAccountHeader_accountRegister']",
+      "targets": [
+        ["css=.responsiveAccountHeader_accountRegister", "css:finder"],
+        ["xpath=//a[contains(text(),'Зарегистрирутесь')]", "xpath:link"],
+        ["xpath=//header[@id='nav']/div[2]/div[2]/div[4]/div/div/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.lookfantastic.ru/accountCreate.account')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57ceda77-241a-4418-bca4-55d66d64fa9e",
+      "comment": "",
+      "command": "click",
+      "target": "name=Полное имя",
+      "targets": [
+        ["id=полное-имя-input-element-id-0d51d691-2332-4a42-b865-b0d948688f38", "id"],
+        ["name=Полное имя", "name"],
+        ["css=#\\43F\\43E\\43B\\43D\\43E\\435-\\438\\43C\\44F-input-element-id-0d51d691-2332-4a42-b865-b0d948688f38", "css:finder"],
+        ["xpath=//input[@id='полное-имя-input-element-id-0d51d691-2332-4a42-b865-b0d948688f38']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "662f0df7-22d3-4398-b2fe-48a7751eaf5e",
+      "comment": "",
+      "command": "type",
+      "target": "name=Полное имя",
+      "targets": [
+        ["id=полное-имя-input-element-id-657e8420-d823-4fcd-a04d-4b0e3ce1e322", "id"],
+        ["name=Полное имя", "name"],
+        ["css=#\\43F\\43E\\43B\\43D\\43E\\435-\\438\\43C\\44F-input-element-id-657e8420-d823-4fcd-a04d-4b0e3ce1e322", "css:finder"],
+        ["xpath=//input[@id='полное-имя-input-element-id-657e8420-d823-4fcd-a04d-4b0e3ce1e322']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Tester"
+    }, {
+      "id": "c5f0a20a-c202-4792-9dcf-4951d224454a",
+      "comment": "",
+      "command": "click",
+      "target": "name=Адрес электронной почты",
+      "targets": [
+        ["id=адрес-электронной-почты-input-element-id-97acf6c1-b015-474f-84c2-93f9b3d14c28", "id"],
+        ["name=Адрес электронной почты", "name"],
+        ["css=#\\430\\434\\440\\435\\441-\\44D\\43B\\435\\43A\\442\\440\\43E\\43D\\43D\\43E\\439-\\43F\\43E\\447\\442\\44B-input-element-id-97acf6c1-b015-474f-84c2-93f9b3d14c28", "css:finder"],
+        ["xpath=//input[@id='адрес-электронной-почты-input-element-id-97acf6c1-b015-474f-84c2-93f9b3d14c28']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b8e4842-7b51-4b3c-a252-dfd5b1843b20",
+      "comment": "",
+      "command": "type",
+      "target": "name=Адрес электронной почты",
+      "targets": [
+        ["id=адрес-электронной-почты-input-element-id-234071a2-3725-414c-9561-eb787f39c27b", "id"],
+        ["name=Адрес электронной почты", "name"],
+        ["css=#\\430\\434\\440\\435\\441-\\44D\\43B\\435\\43A\\442\\440\\43E\\43D\\43D\\43E\\439-\\43F\\43E\\447\\442\\44B-input-element-id-234071a2-3725-414c-9561-eb787f39c27b", "css:finder"],
+        ["xpath=//input[@id='адрес-электронной-почты-input-element-id-234071a2-3725-414c-9561-eb787f39c27b']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "fewoj49881@nefacility.com"
+    }, {
+      "id": "5ebd896a-6c95-48a5-9955-e11f03ab0065",
+      "comment": "",
+      "command": "click",
+      "target": "name=Подтвердить Адрес электронной почты",
+      "targets": [
+        ["id=подтвердить-адрес-электронной-почты-input-element-id-ec842bfe-7c18-4072-a60a-105c437f6f83", "id"],
+        ["name=Подтвердить Адрес электронной почты", "name"],
+        ["css=#\\43F\\43E\\434\\442\\432\\435\\440\\434\\438\\442\\44C-\\430\\434\\440\\435\\441-\\44D\\43B\\435\\43A\\442\\440\\43E\\43D\\43D\\43E\\439-\\43F\\43E\\447\\442\\44B-input-element-id-ec842bfe-7c18-4072-a60a-105c437f6f83", "css:finder"],
+        ["xpath=//input[@id='подтвердить-адрес-электронной-почты-input-element-id-ec842bfe-7c18-4072-a60a-105c437f6f83']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f36bc06e-31e7-4552-bf97-054d33fea09b",
+      "comment": "",
+      "command": "type",
+      "target": "name=Подтвердить Адрес электронной почты",
+      "targets": [
+        ["id=подтвердить-адрес-электронной-почты-input-element-id-ad9c710e-0151-43e4-b82d-f370b9611b68", "id"],
+        ["name=Подтвердить Адрес электронной почты", "name"],
+        ["css=#\\43F\\43E\\434\\442\\432\\435\\440\\434\\438\\442\\44C-\\430\\434\\440\\435\\441-\\44D\\43B\\435\\43A\\442\\440\\43E\\43D\\43D\\43E\\439-\\43F\\43E\\447\\442\\44B-input-element-id-ad9c710e-0151-43e4-b82d-f370b9611b68", "css:finder"],
+        ["xpath=//input[@id='подтвердить-адрес-электронной-почты-input-element-id-ad9c710e-0151-43e4-b82d-f370b9611b68']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "fewoj49881@nefacility.com"
+    }, {
+      "id": "17b79aae-b00d-41e7-87c6-f7a443bbff90",
+      "comment": "",
+      "command": "click",
+      "target": "name=Пароль",
+      "targets": [
+        ["id=пароль-input-element-id-a22ac56b-cd58-4f16-b6a0-f40e48987eb1", "id"],
+        ["name=Пароль", "name"],
+        ["css=#\\43F\\430\\440\\43E\\43B\\44C-input-element-id-a22ac56b-cd58-4f16-b6a0-f40e48987eb1", "css:finder"],
+        ["xpath=//input[@id='пароль-input-element-id-a22ac56b-cd58-4f16-b6a0-f40e48987eb1']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20a42296-8566-4201-9f65-27d86598ad11",
+      "comment": "",
+      "command": "type",
+      "target": "name=Пароль",
+      "targets": [
+        ["id=пароль-input-element-id-166f6e1b-e478-4a7e-a869-a989f458147a", "id"],
+        ["name=Пароль", "name"],
+        ["css=#\\43F\\430\\440\\43E\\43B\\44C-input-element-id-166f6e1b-e478-4a7e-a869-a989f458147a", "css:finder"],
+        ["xpath=//input[@id='пароль-input-element-id-166f6e1b-e478-4a7e-a869-a989f458147a']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "<ercbhjdrf01"
+    }, {
+      "id": "350381c7-10ec-4ecb-bd4f-628e75fcab1d",
+      "comment": "",
+      "command": "click",
+      "target": "name=Подтвердить Пароль",
+      "targets": [
+        ["id=подтвердить-пароль-input-element-id-82f4e584-9af9-4ee3-a775-855356d0e998", "id"],
+        ["name=Подтвердить Пароль", "name"],
+        ["css=#\\43F\\43E\\434\\442\\432\\435\\440\\434\\438\\442\\44C-\\43F\\430\\440\\43E\\43B\\44C-input-element-id-82f4e584-9af9-4ee3-a775-855356d0e998", "css:finder"],
+        ["xpath=//input[@id='подтвердить-пароль-input-element-id-82f4e584-9af9-4ee3-a775-855356d0e998']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16aad5b1-c212-420d-98ac-b7aabd9515fe",
+      "comment": "",
+      "command": "type",
+      "target": "name=Подтвердить Пароль",
+      "targets": [
+        ["id=подтвердить-пароль-input-element-id-1cc66987-fad8-4bf4-9b64-c0b74cdbeecd", "id"],
+        ["name=Подтвердить Пароль", "name"],
+        ["css=#\\43F\\43E\\434\\442\\432\\435\\440\\434\\438\\442\\44C-\\43F\\430\\440\\43E\\43B\\44C-input-element-id-1cc66987-fad8-4bf4-9b64-c0b74cdbeecd", "css:finder"],
+        ["xpath=//input[@id='подтвердить-пароль-input-element-id-1cc66987-fad8-4bf4-9b64-c0b74cdbeecd']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "<ercbhjdrf01"
+    }, {
+      "id": "171497fa-dd3f-4887-8319-789c1c3e62e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jSNQCy",
+      "targets": [
+        ["css=.jSNQCy", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div[2]/form/div[7]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46072ced-10fc-423f-8db4-f1198a548a5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.responsiveAccountHeader_openAccountPanelText",
+      "targets": [
+        ["css=.responsiveAccountHeader_openAccountPanelText", "css:finder"],
+        ["xpath=//header[@id='nav']/div[2]/div[2]/div[4]/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Мой аккаунт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd8e63ab-af7c-49b4-a94c-2ef05219e218",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Мой Аккаунт",
+      "targets": [
+        ["linkText=Мой Аккаунт", "linkText"],
+        ["css=.responsiveAccountHeader_accountListItem:nth-child(2) > .responsiveAccountHeader_accountListLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Мой Аккаунт')]", "xpath:link"],
+        ["xpath=//header[@id='nav']/div[2]/div[2]/div[4]/div/div/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.lookfantastic.ru/accountHome.account')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мой Аккаунт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b9f9be29-0c16-4cbb-b000-5d1a6ab9c863",
+    "name": "Authorization",
+    "commands": [{
+      "id": "ef714ead-af6e-4c78-a21f-e5bae498df8b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e38a2be-9286-4949-a86b-c6629c090750",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0738d2d-3c45-45b1-aed5-ad0705588de1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.responsiveAccountHeader_accountLogin",
+      "targets": [
+        ["css=.responsiveAccountHeader_accountLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=//header[@id='nav']/div[2]/div[2]/div[4]/div/div/div/nav/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.lookfantastic.ru/accountHome.account')]", "xpath:href"],
+        ["xpath=//nav/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d215693-26ef-42ff-8072-487e28fff70f",
+      "comment": "",
+      "command": "type",
+      "target": "name=Адрес электронной почты",
+      "targets": [
+        ["id=адрес-электронной-почты-input-element-id-60339d4d-6370-4a4a-b27a-af3efcaa2bf0", "id"],
+        ["name=Адрес электронной почты", "name"],
+        ["css=#\\430\\434\\440\\435\\441-\\44D\\43B\\435\\43A\\442\\440\\43E\\43D\\43D\\43E\\439-\\43F\\43E\\447\\442\\44B-input-element-id-60339d4d-6370-4a4a-b27a-af3efcaa2bf0", "css:finder"],
+        ["xpath=//input[@id='адрес-электронной-почты-input-element-id-60339d4d-6370-4a4a-b27a-af3efcaa2bf0']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div/div/div/form/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "fewoj49881@nefacility.com"
+    }, {
+      "id": "40fff9dd-2daa-471f-ac5a-ccb1c47c2ed3",
+      "comment": "",
+      "command": "click",
+      "target": "name=Пароль",
+      "targets": [
+        ["id=пароль-input-element-id-adade843-ff0f-49e6-9b4e-bec947d933e1", "id"],
+        ["name=Пароль", "name"],
+        ["css=#\\43F\\430\\440\\43E\\43B\\44C-input-element-id-adade843-ff0f-49e6-9b4e-bec947d933e1", "css:finder"],
+        ["xpath=//input[@id='пароль-input-element-id-adade843-ff0f-49e6-9b4e-bec947d933e1']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div/div/div/form/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "366beae4-a1ff-4d13-bd7a-46128d61e977",
+      "comment": "",
+      "command": "type",
+      "target": "name=Пароль",
+      "targets": [
+        ["id=пароль-input-element-id-818818ee-3df1-46e7-b8d8-c38cef34aa6d", "id"],
+        ["name=Пароль", "name"],
+        ["css=#\\43F\\430\\440\\43E\\43B\\44C-input-element-id-818818ee-3df1-46e7-b8d8-c38cef34aa6d", "css:finder"],
+        ["xpath=//input[@id='пароль-input-element-id-818818ee-3df1-46e7-b8d8-c38cef34aa6d']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div/div/div/form/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "<ercbhjdrf01"
+    }, {
+      "id": "877b79cf-74ec-4b4a-807b-9e1487251a41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jjIGWo",
+      "targets": [
+        ["css=.jjIGWo", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div/div/div/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ab4ff950-4b48-43df-a0ba-1f1c03e0f652",
+    "name": "Add address",
+    "commands": [{
+      "id": "c95e23c1-3ed8-435f-a23b-990a130e55f3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20ef614f-d958-4996-8f8a-4cb1a75770e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8bbee85-4e8a-4fbd-b561-423fc9f0c14d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.responsiveAccountHeader_openAccountPanelText",
+      "targets": [
+        ["css=.responsiveAccountHeader_openAccountPanelText", "css:finder"],
+        ["xpath=//header[@id='nav']/div[2]/div[2]/div[4]/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Мой аккаунт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2491812-394e-4328-8ae9-1c1507298301",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "a3126728-1119-45e1-b39d-3bdf81370b11",
+      "comment": "",
+      "command": "type",
+      "target": "name=Адрес электронной почты",
+      "targets": [
+        ["id=адрес-электронной-почты-input-element-id-c93b37ad-5271-428e-a3dd-d17fd5848582", "id"],
+        ["name=Адрес электронной почты", "name"],
+        ["css=#\\430\\434\\440\\435\\441-\\44D\\43B\\435\\43A\\442\\440\\43E\\43D\\43D\\43E\\439-\\43F\\43E\\447\\442\\44B-input-element-id-c93b37ad-5271-428e-a3dd-d17fd5848582", "css:finder"],
+        ["xpath=//input[@id='адрес-электронной-почты-input-element-id-c93b37ad-5271-428e-a3dd-d17fd5848582']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div/div/div/form/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "fewoj49881@nefacility.com"
+    }, {
+      "id": "e06263c8-82cc-4531-82ae-ed01bdfe05a2",
+      "comment": "",
+      "command": "click",
+      "target": "name=Пароль",
+      "targets": [
+        ["id=пароль-input-element-id-7e2837c2-ffb3-49cb-89a2-d6d6117c1d8c", "id"],
+        ["name=Пароль", "name"],
+        ["css=#\\43F\\430\\440\\43E\\43B\\44C-input-element-id-7e2837c2-ffb3-49cb-89a2-d6d6117c1d8c", "css:finder"],
+        ["xpath=//input[@id='пароль-input-element-id-7e2837c2-ffb3-49cb-89a2-d6d6117c1d8c']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div/div/div/form/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8d098b4-36d6-4a5b-8948-c756e7ef1b5d",
+      "comment": "",
+      "command": "type",
+      "target": "name=Пароль",
+      "targets": [
+        ["id=пароль-input-element-id-dbe97e4a-a63b-4bf9-b824-b0537fc18c8b", "id"],
+        ["name=Пароль", "name"],
+        ["css=#\\43F\\430\\440\\43E\\43B\\44C-input-element-id-dbe97e4a-a63b-4bf9-b824-b0537fc18c8b", "css:finder"],
+        ["xpath=//input[@id='пароль-input-element-id-dbe97e4a-a63b-4bf9-b824-b0537fc18c8b']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div/div/div/form/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "<ercbhjdrf01"
+    }, {
+      "id": "5af1a3dc-82fc-455c-9bb2-5d1b1ee59ffe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jjIGWo",
+      "targets": [
+        ["css=.jjIGWo", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div/section/div/div/div/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f6da3b0-d891-4413-bc54-f5e11986cdef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.responsiveSettingsCard_wrapper:nth-child(4) > .responsiveSettingsCard",
+      "targets": [
+        ["css=.responsiveSettingsCard_wrapper:nth-child(4) > .responsiveSettingsCard", "css:finder"],
+        ["xpath=//main[@id='mainContent']/div[6]/div/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bdfa695-fb26-4940-a5b9-e3fa51ba37da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.responsiveSettingsCard_wrapper:nth-child(4) path",
+      "targets": [
+        ["css=.responsiveSettingsCard_wrapper:nth-child(4) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "df24e942-5579-406c-aad1-091b5d14bf1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.addressBook_addAddress_button_empty",
+      "targets": [
+        ["css=.addressBook_addAddress_button_empty", "css:finder"],
+        ["xpath=//a[contains(text(),'Добавить адрес')]", "xpath:link"],
+        ["xpath=//body[@id='account']/div/div[2]/div/div[2]/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.lookfantastic.ru/editAddress.account')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b47acaf-7294-4994-9820-030629f5fcfd",
+      "comment": "",
+      "command": "click",
+      "target": "id=fullName",
+      "targets": [
+        ["id=fullName", "id"],
+        ["name=fullName", "name"],
+        ["css=#fullName", "css:finder"],
+        ["xpath=//input[@id='fullName']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e8d207a-a878-4873-a75f-6a9103556641",
+      "comment": "",
+      "command": "type",
+      "target": "id=fullName",
+      "targets": [
+        ["id=fullName", "id"],
+        ["name=fullName", "name"],
+        ["css=#fullName", "css:finder"],
+        ["xpath=//input[@id='fullName']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "Tester Test Tester"
+    }, {
+      "id": "dfaa081a-c5c8-4185-9629-c8a8a4b2996d",
+      "comment": "",
+      "command": "click",
+      "target": "id=postCode",
+      "targets": [
+        ["id=postCode", "id"],
+        ["name=postCode", "name"],
+        ["css=#postCode", "css:finder"],
+        ["xpath=//input[@id='postCode']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c6fa75b-2e48-4f47-a69a-dc2aab59b9fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=postCode",
+      "targets": [
+        ["id=postCode", "id"],
+        ["name=postCode", "name"],
+        ["css=#postCode", "css:finder"],
+        ["xpath=//input[@id='postCode']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "190000"
+    }, {
+      "id": "ba395bec-4804-4e5a-8628-08412afc646c",
+      "comment": "",
+      "command": "click",
+      "target": "id=houseNumber",
+      "targets": [
+        ["id=houseNumber", "id"],
+        ["name=houseNumber", "name"],
+        ["css=#houseNumber", "css:finder"],
+        ["xpath=//input[@id='houseNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7ac113d-97a0-4df2-9639-149c0ea0da28",
+      "comment": "",
+      "command": "type",
+      "target": "id=houseNumber",
+      "targets": [
+        ["id=houseNumber", "id"],
+        ["name=houseNumber", "name"],
+        ["css=#houseNumber", "css:finder"],
+        ["xpath=//input[@id='houseNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Korablestroiteley 16"
+    }, {
+      "id": "62a896c7-2e9b-4890-ad58-8612f0b6dbdc",
+      "comment": "",
+      "command": "click",
+      "target": "id=streetName",
+      "targets": [
+        ["id=streetName", "id"],
+        ["name=streetName", "name"],
+        ["css=#streetName", "css:finder"],
+        ["xpath=//input[@id='streetName']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "365c688c-43df-4a2e-8238-7ea75bde11ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=streetName",
+      "targets": [
+        ["id=streetName", "id"],
+        ["name=streetName", "name"],
+        ["css=#streetName", "css:finder"],
+        ["xpath=//input[@id='streetName']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "31"
+    }, {
+      "id": "28ea7ffd-8116-48d4-97db-dfe209444e97",
+      "comment": "",
+      "command": "click",
+      "target": "id=addressLine3",
+      "targets": [
+        ["id=addressLine3", "id"],
+        ["name=addressLine3", "name"],
+        ["css=#addressLine3", "css:finder"],
+        ["xpath=//input[@id='addressLine3']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65c5c04c-a6fc-4818-b51d-0139f7ec6719",
+      "comment": "",
+      "command": "type",
+      "target": "id=addressLine3",
+      "targets": [
+        ["id=addressLine3", "id"],
+        ["name=addressLine3", "name"],
+        ["css=#addressLine3", "css:finder"],
+        ["xpath=//input[@id='addressLine3']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "St. Petersburg"
+    }, {
+      "id": "3a5226b7-b2ee-4fad-9c15-c219f5abee92",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4419ac6-1d51-4b52-b3a0-7ff65b790449",
+      "comment": "",
+      "command": "type",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": "+7921558899"
+    }, {
+      "id": "4c37cea0-ec3b-48c2-aac5-3b387644839d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editAddress_card_submitButton",
+      "targets": [
+        ["css=.editAddress_card_submitButton", "css:finder"],
+        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//form[@id='customerAddress']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//fieldset/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0eda1829-e4bc-480c-bbbf-8909fff84567",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7f3a00f8-a280-49ad-8cff-590836df54ee"]
+  }],
+  "urls": ["https://www.lookfantastic.ru/"],
+  "plugins": []
+}
