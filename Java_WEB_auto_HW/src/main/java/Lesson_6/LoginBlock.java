@@ -1,5 +1,6 @@
 package Lesson_6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +18,7 @@ public class LoginBlock extends BaseView{
     @FindBy(xpath = loginButtonInputByXpath)
     private WebElement loginButton;
 
+    @Step("Нажатие кнопки логин")
     public LoginBlock clickLoginButton(){
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath(loginButtonInputByXpath)));

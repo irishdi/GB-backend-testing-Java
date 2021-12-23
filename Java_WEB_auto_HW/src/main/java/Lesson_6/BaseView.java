@@ -1,5 +1,6 @@
 package Lesson_6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,6 +30,7 @@ public class BaseView {
     @FindBy(css = CONTAINER_BUTTON_LOCATOR_BY_CSS)
     private WebElement containerButton;
 
+    @Step("Закрытие рекламного контейнера")
     public void closeContainer(){
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.cssSelector(CONTAINER_BUTTON_LOCATOR_BY_CSS)));

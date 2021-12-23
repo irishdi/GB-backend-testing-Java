@@ -1,5 +1,6 @@
 package Lesson_6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,6 +20,7 @@ public class MainPage extends BaseView{
     @FindBy(id = "responsiveAccountHeader_openAccountButtonMobile_rightSection")
     private WebElement myAccountButton;
 
+    @Step("Нажать на кнопку Мой аккаунт")
     public MainPage clickMyAccountButton(){
         myAccountButton.click();
         return this;
@@ -27,6 +29,7 @@ public class MainPage extends BaseView{
     @FindBy(css = ".responsiveFlyoutMenu_burgerMenu")
     private WebElement burgerMenu;
 
+    @Step("Развернуть меню")
     public MainPage clickBurgerMenu(){
         burgerMenu.click();
         return this;
@@ -37,6 +40,7 @@ public class MainPage extends BaseView{
         @FindBy(xpath = BRAND_BUTTON_LOCATOR_BY_XPATH)
     private WebElement brandButton;
 
+    @Step("Нажать на Бренды")
     public MainPage clickBrandButton(){
         webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath(BRAND_BUTTON_LOCATOR_BY_XPATH)));
         brandButton.click();
@@ -47,6 +51,7 @@ public class MainPage extends BaseView{
     @FindBy(xpath = LETTER_B_LOCATOR_BY_XPATH)
     private WebElement letterBButton;
 
+    @Step("Выбрать букву бренда")
     public MainPage clickBrandLetter(){
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LETTER_B_LOCATOR_BY_XPATH)));
         letterBButton.click();
@@ -57,6 +62,7 @@ public class MainPage extends BaseView{
     @FindBy(linkText = BRAND_LIST_LOCATOR_BY_LINKED_TEXT)
     private WebElement brandName;
 
+    @Step("Выбрать бренд по имени")
     public MainPage clickToBrandByName() {
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(BRAND_LIST_LOCATOR_BY_LINKED_TEXT)));
         brandName.click();
@@ -67,6 +73,7 @@ public class MainPage extends BaseView{
     @FindBy(xpath = BRAND_ITEMS_LIST_LOCATOR_BY_XPATH)
     private List<WebElement> brandItemsList;
 
+    @Step("Выбрать товар по наименованию")
     public MainPage clickToBrandItem(){
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(BRAND_ITEMS_LIST_LOCATOR_BY_XPATH)));
         brandItemsList.stream().findFirst().get().click();
@@ -77,6 +84,7 @@ public class MainPage extends BaseView{
     @FindBy(xpath = ADD_TO_BASKET_BUTTON_LOCATOR_BY_XPATH)
     private WebElement addToBasketButton;
 
+    @Step("Добавить в корзину")
     public MainPage clickAddToBasket(){
         webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath(ADD_TO_BASKET_BUTTON_LOCATOR_BY_XPATH)));
         addToBasketButton.click();
@@ -87,6 +95,7 @@ public class MainPage extends BaseView{
     @FindBy(css=".headerSearch_toggleForm > .headerSearch_spyglass")
     private WebElement searchGlass;
 
+    @Step("Нажать поиск")
     public MainPage clickSearchGlass(){
         searchGlass.click();
         return this;
@@ -95,6 +104,7 @@ public class MainPage extends BaseView{
     @FindBy(id="header-search-input")
     private WebElement searchInput;
 
+    @Step("Ввести даныне для поиска")
     public MainPage fillSearchInput(String searchItem){
         searchInput.sendKeys(searchItem);
         return this;
@@ -103,6 +113,7 @@ public class MainPage extends BaseView{
     @FindBy(css = ".headerSearch_button > .headerSearch_spyglass")
     private WebElement searchButton;
 
+    @Step("Нажать кнопку поискового запроса")
     public MainPage clickSearchButton(){
         searchButton.click();
         return new MainPage(driver);
@@ -111,6 +122,7 @@ public class MainPage extends BaseView{
     @FindBy(xpath = "//div//span[@class='js-enhanced-ecommerce-data hidden']")
     private List<WebElement> searchItems;
 
+    @Step("Проверка наименования товара для поиска")
     public MainPage checkSearchItem(String searchItem){
         assertThat(String.valueOf(searchItems.stream().allMatch(s -> s.getAttribute("data-product-brand").contains(searchItem))), true);
         return this;
@@ -119,6 +131,7 @@ public class MainPage extends BaseView{
     @FindBy(linkText = "Служба Поддержки")
     private WebElement helpLink;
 
+    @Step("Перейти по ссылке Служба поддержки")
     public MainPage clickHelpLink(){
         helpLink.click();
         return new MainPage(driver);

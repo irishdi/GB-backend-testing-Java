@@ -1,5 +1,6 @@
 package Lesson_6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +17,7 @@ public class BasketPreviewBlock extends BaseView{
     @FindBy(xpath = VIEW_BASKET_BUTTON_LOCATOR_BY_XPATH)
     private WebElement viewBasketButton;
 
+    @Step("Просмотр корзины")
     public BasketPage clickViewBasketButton() {
 
         webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath(VIEW_BASKET_BUTTON_LOCATOR_BY_XPATH)));
